@@ -1,7 +1,7 @@
 {
   "name": "space-bar",
   "version": "1.0.0",
-  "description": "This is the page of famous $1 pizza of NYC.",
+  "description": "The best bar in the whole universe!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
