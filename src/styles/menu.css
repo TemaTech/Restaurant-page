@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background: black;
+}
+
+#content {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.menu-container {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 55px;
+    justify-items: center;
+}
+
+.bev-container {
+    background: rgb(12, 12, 12);
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.beverages {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beverages h1 {
+    color: rgb(124, 124, 124);
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.foods {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foods h1 {
+    color: rgb(124, 124, 124);
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.beverage {
+    height: 400px;
+    background: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.beverage img {
+    height: 300px;
+    width: 300px;
+}
+
+.beverage h3 {
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+}
+
+.beverage button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: rgb(27, 27, 27);
+    border-top: 1px solid rgb(41, 41, 41);
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.beverage button:hover {
+    background: rgb(41, 41, 41);
+    color: rgb(199, 198, 255);
+    cursor: pointer;
+}
+
+.beverage button:active {
+    color: rgb(152, 151, 255);
+}
+
+.food {
+    height: 400px;
+    background: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.food img {
+    height: 300px;
+    width: 300px;
+}
+
+.food h3 {
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+}
+
+.food button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: rgb(27, 27, 27);
+    border-top: 1px solid rgb(41, 41, 41);
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.food button:hover {
+    background: rgb(41, 41, 41);
+    color: rgb(199, 198, 255);
+    cursor: pointer;
+}
+
+.food button:active {
+    color: rgb(152, 151, 255);
+}
+
+.f-container {
+    background: rgb(12, 12, 12);
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 30px;
+    justify-content: center;
+}

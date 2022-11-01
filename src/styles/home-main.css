@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+}
+
+#content {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+.billboard img {
+    content: url("/src/img/Space-energy.png");
+    width: 200px;
+    height: 200px;
+    border-radius: 999px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.308);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.171) 0%, rgba(0,0,0,0) 30%);
+}
+
+.billboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.billboard div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+}
+
+.billboard div h1 {
+    font-style: italic;
+    font-weight: 800;
+}
+
+.billboard div h3 {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.billboard div button {
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    padding: 15px;
+    width: 80%;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.billboard div button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
