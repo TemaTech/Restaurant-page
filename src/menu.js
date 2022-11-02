@@ -17,10 +17,10 @@ function menu() {
     const beveragesContainer = document.createElement('div');
     beveragesContainer.classList = 'bev-container';
 
-    createBeverage('"Space Drink"', '/src/img/Space-energy.png');
-    createBeverage('"A cup of nebula"', '/src/img/a-cup-of-nebula.png');
-    createBeverage('"Space Juice"', '/src/img/space-juice.png');
-    createBeverage('"Space Water"', '/src/img/space-water.png');
+    createBeverage('"Space Drink"', '1');
+    createBeverage('"A cup of nebula"', '2');
+    createBeverage('"Space Juice"', '3');
+    createBeverage('"Space Water"', '4');
 
     beverages.appendChild(beveragesContainer);
     menuContainer.appendChild(beverages);
@@ -36,21 +36,20 @@ function menu() {
     const foodsContainer = document.createElement('div');
     foodsContainer.classList = 'f-container';
 
-    createFood('"Magma fries"', '/src/img/fries.png');
-    createFood('"Pizza with galaxies"', '/src/img/pizza-with-galaxy.png');
-    createFood('"Space breakfast"', '/src/img/space-breakfast.png');
-    createFood('"Planetarian burger"', '/src/img/a-burger-with-planets.png');
+    createFood('"Magma fries"', '1');
+    createFood('"Pizza with galaxies"', '2');
+    createFood('"Space breakfast"', '3');
+    createFood('"Planetarian burger"', '4');
 
     foods.appendChild(foodsContainer);
     menuContainer.appendChild(foods);
 
     content.appendChild(menuContainer);
 
-    function createBeverage(name, img) {
+    function createBeverage(name, classNum) {
         const beverage = document.createElement('div');
-        beverage.classList = 'beverage';
+        beverage.classList = 'beverage' + ' ' + 'bev' + classNum;
         const beverageImg = document.createElement('img');
-        beverageImg.src = img;
         beverage.appendChild(beverageImg);
         const beverageTitle = document.createElement('h3');
         beverageTitle.textContent = name;
@@ -61,11 +60,10 @@ function menu() {
         beveragesContainer.appendChild(beverage);
     }
 
-    function createFood(name, img) {
+    function createFood(name, classNum) {
         const f = document.createElement('div');
-        f.classList = 'food';
+        f.classList = 'food' + ' ' + 'f' + classNum;
         const foodImg = document.createElement('img');
-        foodImg.src = img;
         f.appendChild(foodImg);
         const foodTitle = document.createElement('h3');
         foodTitle.textContent = name;

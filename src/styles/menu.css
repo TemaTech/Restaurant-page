@@ -164,3 +164,35 @@ html {
     gap: 30px;
     justify-content: center;
 }
+
+.bev1 img {
+    content: url('/src/img/Space-energy.png');
+}
+
+.bev2 img {
+    content: url('/src/img/a-cup-of-nebula.png');
+}
+
+.bev3 img {
+    content: url('/src/img/space-juice.png');
+}
+
+.bev4 img {
+    content: url('/src/img/space-water.png');
+}
+
+.f1 img {
+    content: url('/src/img/fries.png');
+}
+
+.f2 img {
+    content: url('/src/img/pizza-with-galaxy.png');
+}
+
+.f3 img {
+    content: url('/src/img/space-breakfast.png');
+}
+
+.f4 img {
+    content: url('/src/img/a-burger-with-planets.png');
+}
